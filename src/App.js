@@ -1,5 +1,4 @@
 import React, {useState} from "react";
-import Tweet from "./Tweet"
 
 function App(){
 
@@ -8,11 +7,12 @@ function App(){
 
   const increment = () => {
     setCount(count +1);
+    setRed(!isRed);
   };
 
   return (
     <div className="App">
-      <h1>Change my color!</h1>
+      <h1 className={isRed ? 'red' : ''}>Change my color!</h1>
       <button onClick={increment}>Increment</button>
       <h1>{count}</h1>
     </div>
