@@ -16,3 +16,8 @@
   align-items: center;
   flex-direction: column;
 }
+
+.red{
+  color: red;
+  font-size: 50px;
+}
